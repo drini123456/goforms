@@ -68,26 +68,8 @@ if (-not $existing) {
 
 # Map class to distribution group
 $classToDG = @{
-    "GS-1A"  = "pg_01a@ldv-muenchen.de"
-    "GS-1B"  = "pg_01a@ldv-muenchen.de"
-    "GS-2A"  = "pg_02a@ldv-muenchen.de"
-    "GS-2B"  = "pg_02b@ldv-muenchen.de"
-    "GS-3A"  = "pg_03a@ldv-muenchen.de"
-    "GS-3B"  = "pg_03b@ldv-muenchen.de"
-    "GS-4A"  = "pg_04a@ldv-muenchen.de"
-    "GS-4B"  = "pg_04b@ldv-muenchen.de"
-    "GYM-5A" = "pg_05a@ldv-muenchen.de"
-    "GYM-5B" = "pg_05b@ldv-muenchen.de"
-    "GYM-6A" = "pg_06a@ldv-muenchen.de"
-    "GYM-6B" = "pg_06b@ldv-muenchen.de"
-    "GYM-7A" = "pg_07a@ldv-muenchen.de"
-    "GYM-7B" = "pg_07b@ldv-muenchen.de"
-    "GYM-8"  = "pg_08@ldv-muenchen.de"
-    "GYM-9"  = "pg_09@ldv-muenchen.de"
-    "GYM-10" = "pg_10@ldv-muenchen.de"
-    "GYM-11" = "pg_11@ldv-muenchen.de"
-    "GYM-12" = "pg_12@ldv-muenchen.de"
-    "GYM-13" = "pg_13@ldv-muenchen.de"
+    "GS-1A"  = "pg_***@ldv-muenchen.de"
+    "GYM-13" = "pg_***@ldv-muenchen.de"
 }
 
 $groupEmail = $classToDG[$Class]
@@ -107,3 +89,4 @@ try {
 } catch {
     Write-Error "Failed to disconnect Exchange session: $_"
 }
+
