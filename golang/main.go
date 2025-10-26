@@ -211,7 +211,7 @@ func createUserFromRow(token string, row []interface{}) (string, string, error) 
 	logProcessedRow(upn)
 
 	// after user creation: handle parent contacts
-	if err := HandleParents(token, row, upn, password, "it-admin@ldv-muenchen.de"); err != nil {
+	if err := HandleParents(token, row, upn, password, "***@ldv-muenchen.de"); err != nil {
 		fmt.Printf("Error handling parents for %s: %v\n", upn, err)
 	}
 
@@ -239,3 +239,4 @@ func main() {
 		}
 	}
 }
+
